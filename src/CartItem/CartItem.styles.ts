@@ -6,17 +6,47 @@ export const Wrapper = styled.div`
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: 1px solid lightblue;
   padding-bottom: 20px;
-  div {
-    flex: 1;
-  }
+ 
+
+  button {
+  background-color: white;
+  color: black;
+  border-radius: 10em;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+  box-shadow: 0 0 0 0 black;
+}
+
+button:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black;
+};
+
+button:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+};
+
+
+
+
+
+
+ 
   .information,
   .buttons {
     display: flex;
     justify-content: space-between;
   }
   img {
-    max-width: 80px;
+    max-width: 15rem;
     object-fit: cover;
     margin-left: 40px;
+    border-radius:10px ;
   }
 `;
+
